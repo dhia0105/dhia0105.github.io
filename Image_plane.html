@@ -1,0 +1,21 @@
+<h1>Write the plane model please</h1>
+<body>
+    <div>
+        <input type="text" id="model" name="name" >
+       <button onclick="getphoto()">Search</button>
+    </div>
+    <div>
+        <img id = "image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png" onerror="this.onerror=null;this.src='https://rlv.zcache.com/im_sorry_message_postcard_funny_penguin_cartoon-re894b5e0c16d4f0aad9b6cd4690c550c_ucbjp_307.jpg';" />
+    </div>
+</body>
+<script>
+var source_image = ""
+var model = ""
+function getphoto () {
+    model = document.getElementById("model").value
+    source_image = "https://doc8643.com/static/img/aircraft/" + model + ".jpg"
+    document.getElementById("image").src= source_image;
+    return true;
+}
+
+</script>
